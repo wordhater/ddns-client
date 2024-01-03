@@ -13,6 +13,6 @@ Create a file named config.json in the path where your running the python script
     "domain": "example.com",
     "password": "long string of numbers/letters",
     "ip": "0.0.0.0",
-    "host": "www"
+    "host": ["www", "@"]
 }
 ```

@@ -19,6 +19,9 @@ print(autoip)
 while True:
     if autoip:
         ip = requests.get('https://api.ipify.org').content.decode('utf8')
-    url = f"https://dynamicdns.park-your-domain.com/update?host={config["host"]}&domain={config["domain"]}&password={config["password"]}&ip={ip}"
-    response = requests.get(url)
-    sleep(360)
+    for i in range(len(config["host"])):
+        url = f"https://dynamicdns.park-your-domain.com/update?host={config["host"][i]}&domain={config["domain"]}&password={config["password"]}&ip={ip}"
+        print(url)
+        response = requests.get(url)
+        sleep(20)
+    sleep(1000)
