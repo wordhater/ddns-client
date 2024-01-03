@@ -6,7 +6,7 @@ At least for namecheap, there is a lack of linux support for their DDNS. This wa
 
 ## Config
 
-Create a file named config.json in the path where your running the python script 
+Create a file named config.json in the path where your running the python script
 
 ### example contents
 
