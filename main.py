@@ -24,4 +24,4 @@ while True:
         print(url)
         response = requests.get(url)
         sleep(20)
-    sleep(1000)
+    sleep(config["delay"])
