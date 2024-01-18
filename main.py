@@ -13,15 +13,17 @@ if config["ip"] == "":
 else:
     ip = config["ip"]
     autoip = False
-print(autoip)
 
+oldip = ""
 # main loop
 while True:
     if autoip:
         ip = requests.get('https://api.ipify.org').content.decode('utf8')
-    for i in range(len(config["host"])):
-        url = f"https://dynamicdns.park-your-domain.com/update?host={config['host'][i]}&domain={config['domain']}&password={config['password']}&ip={ip}"
-        print(url)
-        response = requests.get(url)
-        sleep(20)
+    if ip != oldip:
+        oldip = ip
+        for i in range(len(config["host"])):
+            url = f"https://dynamicdns.park-your-domain.com/update?host={config['host'][i]}&domain={config['domain']}&password={config['password']}&ip={ip}"
+            print(url)
+            response = requests.get(url)
+            sleep(3)
     sleep(config["delay"])
