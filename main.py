@@ -24,6 +24,9 @@ while True:
         for i in range(len(config["host"])):
             url = f"https://dynamicdns.park-your-domain.com/update?host={config['host'][i]}&domain={config['domain']}&password={config['password']}&ip={ip}"
             print(url)
-            response = requests.get(url)
+            try:
+                response = requests.get(url)
+            except:
+                print("failed to load url")
             sleep(3)
     sleep(config["delay"])
