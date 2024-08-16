@@ -4,7 +4,7 @@
 
 At least for namecheap, there is a lack of linux support for their DDNS. This was created to work around this issue
 
-## Config
+## Setup
 
 Create a file named config.json in the path where your running the python script
 
@@ -19,3 +19,6 @@ Create a file named config.json in the path where your running the python script
     "delay": 600
 }
 ```
+then run the setupenv.sh file to create and setup the virtual environment
+
+run.sh will open the env and start the script
