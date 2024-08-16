@@ -8,6 +8,8 @@ At least for namecheap, there is a lack of linux support for their DDNS. This wa
 
 Create a file named config.json in the path where your running the python script
 
+leave ip address blank for automatic selection of ip
+
 ### example contents
 
 ```json
