@@ -1,8 +1,9 @@
 import json
 import requests
+from sys import argv
 from time import sleep
 #load config.json
-
+print(argv)
 with open('config.json') as json_data:
     config = json.load(json_data)
 autoip = False
