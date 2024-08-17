@@ -1,5 +1,7 @@
 # PYTHON NAMECHEAP DDNS CLIENT
 
+Check out the [docker branch](https://github.com/wordhater/ddns-client/tree/docker) for a docker version of this script
+
 ## Purpose
 
 At least for namecheap, there is a lack of linux support for their DDNS. This was created to work around this issue
@@ -21,6 +23,6 @@ leave ip address blank for automatic selection of ip
     "delay": 600
 }
 ```
-then run the setupenv.sh file to create and setup the virtual environment
+Then run the setupenv.sh file to create and setup the virtual environment
 
 run.sh will open the env and start the script
