@@ -10,6 +10,8 @@ At least for namecheap, there is a lack of linux support for their DDNS. This wa
 
 [Install docker-compose](https://docs.docker.com/compose/install/#scenario-two-install-the-compose-plugin)
 
+download with:```git clone --branch docker https://github.com/wordhater/ddns-client```
+
 Create a file named config.json if it doesn't already exist, and fill out with the content below
 
 leave ip address blank for automatic selection of ip
@@ -25,6 +27,8 @@ leave ip address blank for automatic selection of ip
     "delay": 600
 }
 ```
+
+Once configured run: ```docker-compose up -d``` in the base directory for the repo
 
 ## To-Do
 
